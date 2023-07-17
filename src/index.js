@@ -2,9 +2,9 @@
 import Phaser, { Scene } from "phaser";
 import PlayScene from "./scenes/PlayScene";
 import MenuScene from './scenes/MenuScene';
-import PreloadScene from "./scenes/PreLoadScene";
 import ScoreScene from "./scenes/ScoreScene";
 import PauseScene from "./scenes/PauseScene";
+import PreloadScene from "./scenes/PreloadScene";
 const WIDTH = 800;
 const HEIGHT = 600;
 const BIRD_POSITION = { x: WIDTH / 10, y: HEIGHT / 2 }
@@ -26,7 +26,7 @@ const config = {
   physics: {
     default: 'arcade',
     arcade: {
-      debug: true,
+      // debug: true,
     }
   }, scene: initScenes(),
 };
